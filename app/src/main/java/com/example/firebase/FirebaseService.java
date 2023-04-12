@@ -42,6 +42,7 @@ public class FirebaseService {
         //get document with id
         DocumentReference ref = db.collection("notes2").document(documentId);
         Map<String, Object> map = new HashMap<>();
+
         //only save new image
         map.put("fileName",fileName);
         ref.update(map);
